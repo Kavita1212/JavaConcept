@@ -23,12 +23,12 @@ public class P24_IndexofFirstNonRepeatingCharacter2 {
 			}
 		}
 		
-		/*
-		 * for (Map.Entry<Character, Integer> entry : map.entrySet()) {
-		 * System.out.println(entry.getKey() +" : "+entry.getValue());
-		 * 
-		 * }
-		 */
+		
+		  for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+		  System.out.println(entry.getKey() +" : "+entry.getValue());
+		  
+		  }
+		 
 		
 		for (int i = 0; i < s.length(); i++) {
 			char ch1 = s.charAt(i);
