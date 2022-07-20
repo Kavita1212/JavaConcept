@@ -7,23 +7,18 @@ public class RemoveDuplicatesFromString {
 	public static String removeDuplicate(String str) 
 	{
 		Set<Character> st = new HashSet<Character>();
-		StringBuffer sb =  new StringBuffer();
-		char[] arr=str.toCharArray();
-		for(Character c : arr ) 
-		{
-			if(!st.contains(c)) 
-			{
+		StringBuffer s = new StringBuffer();
+		char[] ch = str.toCharArray();
+		for (Character c : ch) {
+			if(!st.contains(c)) {
 				st.add(c);
-				sb.append(c);
+				s.append(c);
 			}
 		}
-		return sb.toString();
-		
+		return s.toString();
 	}
 	public static void main(String[] args) 
 	{
-	
 		System.out.println(removeDuplicate("ajeeeeeeet"));
-
 	}
 }
